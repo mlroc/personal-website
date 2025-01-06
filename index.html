@@ -2,7 +2,7 @@
     <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <title>About Michael Liu</title>
+        <title>Home | Michael Liu</title>
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <link rel="stylesheet" href="assets/css/styles.css">
         <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
@@ -11,20 +11,20 @@
     <body>
         <header>
             <div class="header-left">
-                <p>470504mliu@gmail.com</p>
+                <p class="personal-email">470504mliu@gmail.com</p>
             </div>
     
             <div class="header-right">
-                <a href="assets/resume.pdf" target="_blank">Resume</a>
-                <a href="#" id="contact-link">Contact</a>
+                <a href="assets/resume.pdf" target="_blank" class="top-right-button">Resume</a>
+                <a href="#" id="contact-link" class="top-right-button" onclick="document.getElementById('contact-modal').style.display='block'">Contact</a>
             </div>
         </header>
 
     <div class="center-container">
         <ul>
-            <li><a href="#Projects">Projects</a></li>
-            <li><a href="#Experiences">Experiences</a></li>
-            <li><a href="#Contacts">Contacts</a></li>
+            <li><a class="center" href="#Projects">Projects</a></li>
+            <li><a class="center" href="#Experiences">Experiences</a></li>
+            <li><a class="center" href="#Contacts">Contacts</a></li>
         </ul>
     </div>
 
@@ -42,7 +42,9 @@
         </section>
 
         <div id="contact-popup" class="popup">
-            <p>Stuff</p> <!-- Placeholder -->
+            <div class="contact-modal">
+                <span onclick="document.getElementById('contact-modal').style.display='none'" class="close" title="Close Modal">&times;</span>
+            </div>
         </div>
 
     </body>
